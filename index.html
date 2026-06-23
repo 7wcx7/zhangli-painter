@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画家张利 - 个人简介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 50px 40px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 4px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.85;
+            letter-spacing: 2px;
+        }
+
+        .header .network-badge {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 6px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 30px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+
+        .info-item {
+            background: #f8f9fc;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item .label {
+            font-size: 13px;
+            color: #888;
+            min-width: 80px;
+        }
+
+        .info-item .value {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 16px;
+            padding-left: 14px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .section .bio-line {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .section .bio-line:last-child {
+            border-bottom: none;
+        }
+
+        .exhibition-list {
+            list-style: none;
+        }
+
+        .exhibition-list li {
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            background: #f8f9fc;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .exhibition-list li .year {
+            display: inline-block;
+            font-weight: 700;
+            color: #667eea;
+            margin-right: 8px;
+        }
+
+        .exhibition-list li .work {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .exhibition-list li .award {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 2px 12px;
+            background: #e8f0fe;
+            color: #667eea;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 24px;
+            background: #f8f9fc;
+            color: #aaa;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .header { padding: 36px 20px 28px; }
+            .header h1 { font-size: 30px; }
+            .content { padding: 24px 20px; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>张 利</h1>
+            <div class="subtitle">笔名 · 张丽</div>
+            <div class="network-badge">PEOPLE'S PAINTER NETWORK</div>
+        </div>
+
+        <div class="content">
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">性别</span>
+                    <span class="value">女</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">常住城市</span>
+                    <span class="value">湖南 · 长沙市</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">创作类型</span>
+                    <span class="value">花鸟</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">毕业院校</span>
+                    <span class="value">湖南省轻工业高等专科学校</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>画家简介</h2>
+                <p>
+                    张利，笔名张丽，汉族，湖南省长沙市人，毕业于湖南省轻工业高等专科学校。
+                </p>
+                <div class="bio-line">1992–1994 年 湖南省株洲市攸县三中普高美术高</div>
+                <div class="bio-line">外宣办影视中心外宣品组织联络</div>
+                <div class="bio-line">2016–2018 年 湖南省花鸟画家协会</div>
+            </div>
+
+            <div class="section">
+                <h2>重要参展</h2>
+                <ul class="exhibition-list">
+                    <li>
+                        <span class="year">2017</span> 版画 <span class="work">《燃情岁月》</span>
+                        <br>第九届中国体育美术作品展览
+                        <br><span class="award">入会资格</span>
+                    </li>
+                    <li>
+                        <span class="year">2018</span> 中国画 <span class="work">《丰收》</span>
+                        <br>美丽中国·纪念改革开放40周年——全国中国画作品展
+                        <br><span class="award">入会资格</span>
+                    </li>
+                    <li>
+                        <span class="year">2018</span> 中国画 <span class="work">《清韵》</span>
+                        <br>江海门户通天下——全国中国画作品展
+                        <br><span class="award">入选</span>
+                    </li>
+                    <li>
+                        <span class="year">2018</span> 中国画 <span class="work">《自由系列·栖》</span>
+                        <br>品真格物——全国青年工笔画作品展
+                        <br><span class="award">入选</span>
+                    </li>
+                    <li>
+                        <span class="year">2018</span> 中国画 <span class="work">《乡韵》</span>
+                        <br>南田风骨——第三届恽南田全国花鸟画作品展
+                        <br><span class="award">入选</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            人民画家网 · PEOPLE'S PAINTER NETWORK
+        </div>
+    </div>
+</body>
+</html>
